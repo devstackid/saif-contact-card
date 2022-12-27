@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap");
+*,html,body{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'cabin',sans-serif;
+}
+.container {
+    background: linear-gradient(45deg, #f22613, #f89406, #26a65b, #5868ec, #f54e80, #f7ca18, #d2527f);
+    background-size: 500% 500%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: move 20s ease infinite;
+}
+.wrapper{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    
+}
+.leftbar{
+    border-radius: 10px;
+    padding: 5rem 2rem;
+    text-transform: capitalize;
+    /* background-color: rgba(0, 0, 0, 0.511); */
+}
+.leftbar h1{
+    color: white;
+}
+.leftbar p{
+    cursor: pointer;
+    text-align: right;
+}
+.leftbar p:hover{
+    color: white;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.card{
+    display: none;
+    justify-content: center;
+    padding: 2rem 1rem;
+    box-shadow: 0 7px 15px 0px rgba(0, 0, 0, 0.376);
+    border-radius: 10px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.376);
+}
+.card span{
+    padding: 2px 4px;
+    color: white;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    background-color: red;
+}
+.card span:hover{
+    color: red;
+    background-color: white;
+    transition: 0.3s ease ;
+}
+.gambar{
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid black;
+    width: 20%;
+    display: flex;
+}
+.gambar img{
+    width: 100%;
+    border-radius: 50%;
+    border: 4px solid black
+}
+.text{
+    text-transform: capitalize;
+    margin: 0 0.7rem;
+
+}
+.text h5{
+    background-color: rgb(255, 249, 137);
+    cursor: pointer;
+    margin-top: 0.5rem;
+    border-radius: 10px;
+    width: max-content;
+    padding: 0.8rem 1rem;
+    color: black;
+}
+.text h5:hover{
+    background-color: #5868ec;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.contact{
+    display: none;
+    justify-content: center;
+    padding: 2rem 1rem;
+    box-shadow: 0 7px 15px 0px rgba(0, 0, 0, 0.376);
+    border-radius: 10px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.376);
+}
+.sosmed{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.sosmed a{
+    text-decoration: none;
+    color: white;
+    
+}
+.sosmed img{
+    width: 50px;
+}
+.contact span{
+    padding: 2px 4px;
+    color: white;
+    right: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: red;
+}
+
+
+@keyframes move {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@keyframes fade{
+    to{
+        opacity: 1;
+    }
+}
+
+.fade {
+    opacity: 0;
+    animation: 0.5s fade forwards;
+}
+
+
